@@ -1,6 +1,6 @@
 customer_name = input("Enter your name: ")
 product_name = input("Enter the product name: ")
-price = int(input("Enter price of the product: "))
+price = float(input("Enter price of the product: "))
 quantity = int(input("Enter item quantity: "))
 
 print("========================================")
