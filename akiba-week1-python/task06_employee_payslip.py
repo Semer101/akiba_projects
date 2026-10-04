@@ -17,22 +17,3 @@ print(f"Food Allowance:          {food_allowance} ETB")
 print("----------------------------------------")
 print(f"Gross Salary:            {gross_salary} ETB")
 print("========================================")
-
-"""
-Display a professional payslip.
-Example
-========================================
-             EMPLOYEE PAYSLIP
-========================================
-
-Employee: Ahmed Ali
-
-Basic Salary:          12,000 ETB
-Transport Allowance:    2,000 ETB
-Food Allowance:         1,500 ETB
-----------------------------------------
-Gross Salary:          15,500 ETB
-========================================
-
-
-"""
