@@ -44,8 +44,13 @@ It gets removed by garbage collection whe it's not referenced.
 
 Project Reflection:
 Why does modifying a shared reference affect the original list?
+Because the reference points to the original object.
+
 Why does modifying the copied list not affect the original list?
+Yes, it doesn't affect the original because they are 2 different objects.
+
 What is the difference between equality and identity in Python?
+Equality compares values, identity checks if the referred object is the same.
 
 
 Setup and execution instructions:
@@ -53,4 +58,4 @@ Setup and execution instructions:
 cd week-4-python-task
 
 python questions.py
-student_marks_manager.py
+python student_marks_manager.py
