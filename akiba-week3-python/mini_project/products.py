@@ -1,5 +1,5 @@
-def add_product(product, price, products):
-    products.append({"product" : product, "price" : price})
+def add_product(product, price, stock, products):
+    products.append({"product" : product, "price" : price, "stock" : stock})
     return products
 
 
@@ -23,11 +23,5 @@ def display_products(products):
         print(i)
 
 
-products = [
-    {"product" : "Apple", "price" : 10},
-    {"product" : "Car", "price" : 5000},
-    {"product" : "Bag", "price" : 60}
-]
 
-add_product("Pen", 20, products)
-display_products(products)
+
