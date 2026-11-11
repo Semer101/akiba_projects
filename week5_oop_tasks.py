@@ -21,3 +21,24 @@ student1.display_info()
 student2.display_info()
 student3.display_info()
 
+# ==========================
+# Task 2: Rectangle Calculator
+# ==========================
+
+class Rectangle():
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.width * self.length
+
+    def perimeter(self):
+        return 2 * (self.length + self.width)
+
+rectangle1 = Rectangle(3, 4)
+rectangle2 = Rectangle(5, 10)
+
+print(f"Rectangle1 Area: {rectangle1.area()} Perimeter: {rectangle1.perimeter()}")
+print(f"Rectangle2 Area: {rectangle2.area()} Perimeter: {rectangle2.perimeter()}")
+
