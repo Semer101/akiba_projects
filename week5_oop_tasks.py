@@ -73,3 +73,33 @@ student3.display()
 #Ans1: Class attribute applies to all instances of the class, whereas instance attribute is specific to the single instance object created.
 #Ans2: Each instance (self) has its own score attribute that is specific to it. 
 
+# ==========================
+# Task 4: Product Information System
+# ==========================
+
+class Product():
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+
+    def __str__(self):
+        return f"Product name: {self.name}, Price: {self.price}, Quantity: {self.quantity} "
+
+    def total_value(self):
+        return self.price * self.quantity
+
+product1 = Product("Apple", 5, 20)
+product2 = Product("Pen", 3, 50)
+product3 = Product("Bag", 50, 10)
+
+print(product1)
+print(product2)
+print(product3)
+
+print(product1.total_value())
+print(product2.total_value())
+print(product3.total_value())
+
+#Ans: __str__ method is used to display the object as a string when using print().
+
