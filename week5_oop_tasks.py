@@ -42,3 +42,34 @@ rectangle2 = Rectangle(5, 10)
 print(f"Rectangle1 Area: {rectangle1.area()} Perimeter: {rectangle1.perimeter()}")
 print(f"Rectangle2 Area: {rectangle2.area()} Perimeter: {rectangle2.perimeter()}")
 
+# ==========================
+# Task 3: Student Score Management
+# ==========================
+
+class Student():
+    school_name = "Akiba Academy"
+
+    def __init__(self, name, score, department):
+        self.name = name
+        self.score = score
+        self.department = department
+
+    def display(self):
+        print(f"Name: {self.name}")
+        print(f"Score: {self.score}")
+        print(f"Department: {self.department}")
+        print(f"School name: {self.school_name}")
+
+student1 = Student("Alice", 70, "Mechanical Engineering")
+student2 = Student("Adam", 85, "Software Engineering")
+student3 = Student("Max", 97, "Business")
+
+student1.score = 79
+print(f"Updated score = {student1.score}")
+student1.display()
+student2.display()
+student3.display()
+
+#Ans1: Class attribute applies to all instances of the class, whereas instance attribute is specific to the single instance object created.
+#Ans2: Each instance (self) has its own score attribute that is specific to it. 
+
