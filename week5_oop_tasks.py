@@ -103,3 +103,38 @@ print(product3.total_value())
 
 #Ans: __str__ method is used to display the object as a string when using print().
 
+# ==========================
+# Task 5: Bank Account Management
+# ==========================
+
+class BankAccount():
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+    def deposit(self, amount):
+        if amount <= 0:
+            print("Deposit amount must be positive.")
+        else:
+            self.balance += amount
+
+    def withdraw(self, amount):
+        if amount < 0:
+            print("Amount cannot be negative.")
+        elif amount > self.balance:
+            print("Insufficient funds.")
+        else:
+            self.balance -= amount
+
+    def display_balance(self):
+        print(f"Current Balance: {self.balance}")
+
+account1 = BankAccount("Sara", 1000)
+account2 = BankAccount("Bob", 2000)
+
+account1.deposit(500)
+account1.withdraw(300)
+account1.withdraw(2000)
+account1.display_balance()
+
+#Ans: When a withdrawal exceeds the balance, the program prints the message: "Insufficient funds." and cancels the withdrawal.
