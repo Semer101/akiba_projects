@@ -1,5 +1,3 @@
-from book import Book
-
 class Member:
     def __init__(self, name, member_id):
         self.borrowed_books = []
